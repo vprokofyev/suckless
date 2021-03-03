@@ -32,4 +32,4 @@ alias txks='tmux kill-session'
 alias ns1='ssh -i $HOME/.ssh/ns1 opc@ns1'
 alias ns2='ssh -i $HOME/.ssh/ns2 opc@ns2'
 
-alias config='/usr/bin/git --git-dir=/home/undertaker/.cfg/ --work-tree=/home/undertaker'
+alias config='/usr/bin/git --git-dir=/home/undertaker/dotfiles/ --work-tree=/home/undertaker'
