@@ -17,8 +17,12 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-commentary'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vimwiki/vimwiki'
+Plugin 'mattn/calendar-vim'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
 Plugin 'junegunn/goyo.vim'
 Plugin 'airblade/vim-gitgutter'
+"Plugin 'tpope/vim-fugitive'
 source ~/.minvimrc
 
 
@@ -134,6 +138,7 @@ nnoremap <leader>ev :tabedit $HOME/.vimrc<CR>
 nnoremap <leader>ee :tabedit $HOME/.extvimrc<CR>
 nnoremap <leader>em :tabedit $HOME/.minvimrc<CR>
 nnoremap <leader>et :tabedit $HOME/.tmux.conf<CR>
+nnoremap <leader>vv :vsplit<CR>
 " Select again deselected
 nnoremap <leader>v V`]
 " Indent select with Shift-< and Shift->
