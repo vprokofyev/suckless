@@ -2,27 +2,10 @@
 " Binds
 "-----------------------------------------------------------------------------
 
-nmap <F2> :NERDTreeToggle<CR>
 nmap <F7> :TagbarToggle<CR>
 noremap <F9> :SyntasticCheck<CR> :Errors<CR><C-w><C-w>
 nnoremap <leader>f :Files ~<CR>
 nnoremap <leader>h :History<CR> 
-
-"-----------------------------------------------------------------------------
-" NERDTree
-"-----------------------------------------------------------------------------
-
-let NERDTreeHighlightCursorline = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-let NERDTreeShowHidden = 1
-let NerdTreeAutoDeleteBuffer = 1
-" Ignore selected files
-"let NERDTreeIgnore=['\.pyc$', '\~$']
-" Exit Vim if NERDTree is the only window left.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1
-    \ && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-    \ quit | endif
 
 
 "-----------------------------------------------------------------------------
