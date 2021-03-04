@@ -30,7 +30,6 @@ source ~/.minvimrc
 " Extended
 "-----------------------------------------------------------------------------
 
-Plugin 'preservim/nerdtree'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/tagbar'
@@ -48,7 +47,7 @@ filetype plugin indent on
 " Sets
 "-----------------------------------------------------------------------------
 
-set timeout timeoutlen=500 ttimeoutlen=100
+set timeout timeoutlen=500 ttimeoutlen=500
 set smartindent
 set hidden
 set hlsearch
@@ -130,8 +129,10 @@ nnoremap <leader>t :tabnew<CR>
 nnoremap <leader>c :close<CR>
 nnoremap <C-j> gT
 nnoremap <C-k> gt
-inoremap <C-j> <ESC>gT
-inoremap <C-k> <ESC>gt
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
 nnoremap <leader>] :nohl<CR>
 nnoremap <leader>pi :PluginInstall<CR>
 nnoremap <leader>ev :tabedit $HOME/.vimrc<CR>
