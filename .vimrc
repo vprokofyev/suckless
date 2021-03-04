@@ -86,24 +86,11 @@ augroup cline
     au WinEnter,InsertLeave * set cursorline
 augroup END
 " Highlight characters if line length is over 79 and apply it to files
-function! Length()
-    augroup linelength
-        au BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
-        au BufEnter * match OverLength /\%80v.*/
+augroup linelength
+    au BufEnter *.md,*.wiki,*.py,*.txt highlight OverLength ctermbg=darkgrey guibg=#592929
+    au BufEnter *.md,*.wiki,*.py,*.txt match OverLength /\%80v.*/
     augroup END
-endfunction
-au BufRead,BufNewFile *.md,*.wiki,*.py,*.txt call Length()
-" Make switch between modes a bit faster
-" WARNING Note that this will make it impossible to use mappings that start
-" with <Esc> while in insert mode
-"if ! has('gui_running')
-"    set ttimeoutlen=200
-"    augroup FastEscape
-"        autocmd!
-"        au InsertEnter\* set timeoutlen=300
-"        au InsertLeave * set timeoutlen=300
-"    augroup END
-"endif
+
 
 "-----------------------------------------------------------------------------
 " Color settings
@@ -133,6 +120,8 @@ inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
+inoremap <C-w> <S-Right>
+inoremap <C-b> <S-Left>
 nnoremap <leader>] :nohl<CR>
 nnoremap <leader>pi :PluginInstall<CR>
 nnoremap <leader>ev :tabedit $HOME/.vimrc<CR>
