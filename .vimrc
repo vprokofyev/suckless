@@ -69,6 +69,7 @@ set termwinsize=10x200
 set textwidth=79
 " Don't format to 79 textwidth by default
 set formatoptions=
+set splitright
 
 "-----------------------------------------------------------------------------
 " Autocommands
