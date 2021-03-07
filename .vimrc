@@ -35,6 +35,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/tagbar'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'chrisbra/Colorizer'
 source ~/.extvimrc
 
 call vundle#end()
