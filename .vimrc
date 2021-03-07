@@ -132,6 +132,7 @@ nnoremap <leader>ev :tabedit $HOME/.vimrc<CR>
 nnoremap <leader>ee :tabedit $HOME/.extvimrc<CR>
 nnoremap <leader>em :tabedit $HOME/.minvimrc<CR>
 nnoremap <leader>et :tabedit $HOME/.tmux.conf<CR>
+nnoremap <leader>ea :tabedit $HOME/.config/awesome/rc.lua<CR>
 nnoremap <leader>vv :vsplit<CR>
 " Select again deselected
 nnoremap <leader>v V`]
