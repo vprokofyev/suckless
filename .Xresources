@@ -1,0 +1,36 @@
+#include ".rxvt-colors"
+#include ".rxvt-fonts"
+#include ".rxvt-perl"
+
+! System
+Rxvt*termName: rxvt-unicode-256color
+Rxvt*scrollBar: false
+Rxvt*saveLines: 1024 
+!Rxvt*buffered: true
+!Rxvt*cursorBlink: true
+!Rxvt*cursorUnderline: true
+Rxvt*pointerBlank: true
+
+! Visual
+Rxvt*geometry: 80x24 
+Rxvt*fading: 45 
+
+! True transparency
+!Rxvt*depth: 32
+!Rxvt*background: rgba:3f00/3f00/3f00/dddd
+!Rxvt*background: [95]#000000
+!Rxvt*transparent: true
+! URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
+!Rxvt*shading: 30 
+
+! Native transparency
+Rxvt*inheritPixmap: true
+Rxvt*transparent: true
+! URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
+Rxvt*shading: 17 
+
+
+
+! Bindings
+! PrintScreen to dump in file
+Rxvt*print-pipe:  cat > $HOME/dump/$(echo rxvt.dump.$(date +'%Y%M%d%H%m%S'))
