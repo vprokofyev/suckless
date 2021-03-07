@@ -210,7 +210,7 @@ awful.tag.add("[1] www", {
     )
     awful.tag.add("[2] dev", {
 --        icon = "/usr/share/icons/oxygen/base/22x22/places/user-desktop.png",
-        layout = awful.layout.suit.max.fullscreen,
+        layout = awful.layout.suit.max,
         --        master_fill_policy = "master_width_factor",
         --gap_single_client  = true,
         --gap                = 1,
@@ -225,7 +225,7 @@ awful.tag.add("[1] www", {
     )
     awful.tag.add("[4] root", {
 --        icon = "/usr/share/pixmaps/firefox-esr.png",
-        layout = awful.layout.suit.tile,
+        layout = awful.layout.suit.max,
         screen = s,
         }
     )
