@@ -62,6 +62,8 @@ awful.spawn.with_shell("feh --bg-fill --randomize /home/undertaker/.wallpapers")
 terminal = "rxvt-unicode" 
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
+-- Switch caps to escape
+awful.spawn.with_shell("setxkbmap -option caps:escape")
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -343,7 +345,6 @@ awful.tag.add("[1] www", {
 --	    batt,
             s.mylayoutbox,
 	    cpuwidget,
-	    
         },
     }
 end)
