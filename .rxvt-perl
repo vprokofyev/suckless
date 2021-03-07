@@ -1,0 +1,40 @@
+!Rxvt*url-launcher: firefox
+! init plugins
+Rxvt.perl-ext-common: default,matcher,confirm-paste,selection-to-clipboard, tabbedex
+
+!digital-clock
+
+
+
+! open urls
+!Rxvt.url-launcher: /usr/bin/xdg-open
+!Rxvt.matcher.button: 1
+
+
+! Tabs
+Rxvt.tabbedex.title: yes
+Rxvt.matcher.button: 1
+Rxvt.tabbedex.tab-fg: 4
+Rxvt.tabbedex.tab-bg: 2
+Rxvt.tabbedex.tabbar-fg: 2
+Rxvt.tabbedex.tabbar-bg: 0
+Rxvt.tabbedex.autohide: yes 
+Rxvt.colorUL: #4682B4
+
+!Rxvt.tabbedex.tabbar-fg: 2
+!Rxvt.tabbedex.tabbar-bg: 0
+!Rxvt.tabbedex.tab-fg: 2
+!Rxvt.tabbedex.tab-bg: 0
+!Rxvt.tabbedex.autohide: yes
+!Rxvt.tabbedex.new-button: no
+!Rxvt.tabbedex.title: yes
+! Prevent last tab to close rxvt
+!Rxvt.tabbedex.reopen-on-close: yes
+
+! Font-size
+!Rxvt.keysym.C-Up:     font-size:increase
+!Rxvt.keysym.C-Down:   font-size:decrease
+!Rxvt.keysym.C-S-Up:   font-size:incglobal
+!Rxvt.keysym.C-S-Down: font-size:decglobal
+!Rxvt.keysym.C-equal:  font-size:reset
+!Rxvt.keysym.C-slash:  font-size:show

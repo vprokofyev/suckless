@@ -1,0 +1,28 @@
+"-----------------------------------------------------------------------------
+" Binds
+"-----------------------------------------------------------------------------
+
+nmap <F7> :TagbarToggle<CR>
+noremap <F9> :SyntasticCheck<CR> :Errors<CR><C-w><C-w>
+nnoremap <leader>f :Files ~<CR>
+nnoremap <leader>h :History<CR> 
+
+
+"-----------------------------------------------------------------------------
+" Syntastic
+"-----------------------------------------------------------------------------
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_stl_format = "[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]"
+
+
+"-----------------------------------------------------------------------------
+" YouCompleteMe
+"-----------------------------------------------------------------------------
+
+set completeopt-=preview
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
+
+
