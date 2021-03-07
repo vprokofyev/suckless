@@ -15,6 +15,7 @@ Plugin 'Vundle/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vimwiki/vimwiki'
 Plugin 'mattn/calendar-vim'
@@ -45,6 +46,7 @@ filetype plugin indent on
 " Sets
 "-----------------------------------------------------------------------------
 
+set scrolloff=7
 set timeout timeoutlen=500 ttimeoutlen=500
 set smartindent
 set hidden
@@ -64,6 +66,7 @@ set nowrap
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set backspace=indent,eol,start
 set colorcolumn=+1
 set termwinsize=10x200
 set textwidth=79
@@ -92,7 +95,7 @@ augroup linelength
 
 
 "-----------------------------------------------------------------------------
-" Color settings
+" Color and visual settings
 "-----------------------------------------------------------------------------
 
 syntax on
@@ -102,7 +105,17 @@ set termguicolors
 " Make tmux colors great again
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-
+" Cursos color
+if &term =~ "xterm\\|rxvt"
+  " use an orange cursor in insert mode
+  let &t_SI = "\<Esc>]12;blue\x7"
+  " use a red cursor otherwisue
+  let &t_EI = "\<Esc>]12;black\x7"
+  silent !echo -ne "\033]12;black\007"
+  " reset cursor when vim exits
+  autocmd VimLeave * silent !echo -ne "\033]112\007"
+  " use \003]12;gray\007 for gnome-terminal and rxvt up to version 9.21
+endif
 
 "-----------------------------------------------------------------------------
 " Custom binds
@@ -135,6 +148,11 @@ nnoremap <lt>> V`]<
 nnoremap ><lt> V`]>
 nnoremap =- V`]=
 nnoremap <leader>q :wa<CR> :qa<CR>
+" vim-surround
+nnoremap <leader>( :normal viWS)<CR>
+nnoremap <leader>[ :normal viWS]<CR>
+nnoremap <leader>" :normal viWS"<CR>
+nnoremap <leader>' :normal viWS'<CR>
 " Go full-vim mode
 noremap <Up> <Nop>
 noremap <Down> <Nop>
