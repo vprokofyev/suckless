@@ -35,7 +35,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/tagbar'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'chrisbra/Colorizer'
+"Plugin 'chrisbra/Colorizer'
 source ~/.extvimrc
 
 call vundle#end()
@@ -100,8 +100,9 @@ augroup linelength
 " Color and visual settings
 "-----------------------------------------------------------------------------
 
-syntax on
+"syntax on
 colorscheme gruvbox
+let g:airline_theme='gruvbox'
 set background=light
 "set termguicolors
 " Make tmux colors great again
