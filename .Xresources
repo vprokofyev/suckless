@@ -1,8 +1,15 @@
+!-----------------------------------------------------------------------------
+! Sources
+!-----------------------------------------------------------------------------
+
 #include ".rxvt-colors"
 #include ".rxvt-fonts"
 #include ".rxvt-perl"
 
-! System
+!-----------------------------------------------------------------------------
+! Main options
+!-----------------------------------------------------------------------------
+
 Rxvt*termName: rxvt-unicode-256color
 Rxvt*scrollBar: false
 Rxvt*saveLines: 1024 
@@ -11,7 +18,11 @@ Rxvt*saveLines: 1024
 !Rxvt*cursorUnderline: true
 Rxvt*pointerBlank: true
 
-! Visual
+
+!-----------------------------------------------------------------------------
+! Visual settings
+!-----------------------------------------------------------------------------
+
 Rxvt*geometry: 80x24 
 Rxvt*fading: 45 
 
@@ -24,13 +35,16 @@ Rxvt*fading: 45
 !Rxvt*shading: 30 
 
 ! Native transparency
-Rxvt*inheritPixmap: true
-Rxvt*transparent: true
+!Rxvt*inheritPixmap: true
+!Rxvt*transparent: true
 ! URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
-Rxvt*shading: 17 
+!Rxvt*shading: 17 
 
 
+!-----------------------------------------------------------------------------
+! Binds
+!-----------------------------------------------------------------------------
 
-! Bindings
 ! PrintScreen to dump in file
 Rxvt*print-pipe:  cat > $HOME/dump/$(echo rxvt.dump.$(date +'%Y%M%d%H%m%S'))
+

@@ -1,33 +1,24 @@
-!fonts colors
+!-----------------------------------------------------------------------------
+! Foreground
+!-----------------------------------------------------------------------------
 
-!glow green
 !Rxvt*foreground: #76ee00
-
-!light green oldsch
-Rxvt*foreground: #33FF66
-
-!dark green
+!Rxvt*foreground: #33FF66
 !Rxvt*foreground: #8ae234 
-
-!light white
 !Rxvt*foreground: #FFFFFF 
-
-!dark white
 !Rxvt*foreground: #d3d7cf
-
-!light orange
 !Rxvt*foreground: #FFCC00
-
-!dark orange
 !Rxvt*foreground: #FFB000
-
-!default grey
 !Rxvt*foreground: #CCCCCC
-
-!dark grey
 !Rxvt*foreground: #d6d6d6
+Rxvt*foreground: #000000
 
-!backgrounds
+
+!-----------------------------------------------------------------------------
+! Background
+!-----------------------------------------------------------------------------
+
+!Rxvt*background: #000000 
 !Rxvt*background: #000000 
 !Rxvt*background: #282828
 
