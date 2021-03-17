@@ -53,3 +53,10 @@ URxvt.keysym.Home: \033[1~
 URxvt.keysym.End: \033[4~
 URxvt.keysym.KP_Home: \033[1~
 URxvt.keysym.KP_End:  \033[4~
+
+! change to red background
+URxvt.keysym.C-7: command:\033]11;#ff0000\007
+! change to light background
+URxvt.keysym.C-8: command:\033]11;#ffffff\007
+! change to dark gray background
+URxvt.keysym.C-9: command:\033]11;#777777\007
