@@ -101,9 +101,9 @@ augroup linelength
 "-----------------------------------------------------------------------------
 
 "syntax on
-colorscheme gruvbox
-let g:airline_theme='gruvbox'
-set background=light
+colorscheme afterglow
+let g:airline_theme='badwolf'
+set background=dark
 "set termguicolors
 " Make tmux colors great again
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
