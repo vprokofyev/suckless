@@ -100,8 +100,8 @@ augroup linelength
 " Color and visual settings
 "-----------------------------------------------------------------------------
 
-"syntax on
-colorscheme afterglow
+syntax on
+colorscheme gruvbox
 let g:airline_theme='badwolf'
 set background=dark
 "set termguicolors
@@ -134,6 +134,7 @@ nnoremap <leader>ee :tabedit $HOME/.extvimrc<CR>
 nnoremap <leader>em :tabedit $HOME/.minvimrc<CR>
 nnoremap <leader>et :tabedit $HOME/.tmux.conf<CR>
 nnoremap <leader>ea :tabedit $HOME/.config/awesome/rc.lua<CR>
+nnoremap <leader>es :tabedit $HOME/.config/sakura/sakura.conf<CR>
 nnoremap <leader>vv :vsplit<CR>
 " Select again deselected
 nnoremap <leader>v V`]
