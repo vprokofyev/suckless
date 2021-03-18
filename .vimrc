@@ -94,7 +94,17 @@ augroup linelength
     au BufEnter *.md,*.wiki,*.py,*.txt highlight OverLength ctermbg=darkgrey guibg=#592929
     au BufEnter *.md,*.wiki,*.py,*.txt match OverLength /\%80v.*/
     augroup END
-
+" Cursos color
+if &term =~ "xterm\\|rxvt"
+  " use an orange cursor in insert mode
+  let &t_SI = "\<Esc>]12;blue\x7"
+  " use a red cursor otherwisue
+  let &t_EI = "\<Esc>]12;white\x7"
+  silent !echo -ne "\033]12;white\007"
+  " reset cursor when vim exits
+  autocmd VimLeave * silent !echo -ne "\033]112\007"
+  " use \003]12;gray\007 for gnome-terminal and rxvt up to version 9.21
+endif
 
 "-----------------------------------------------------------------------------
 " Color and visual settings
@@ -104,7 +114,7 @@ syntax on
 colorscheme gruvbox
 let g:airline_theme='badwolf'
 set background=dark
-"set termguicolors
+set termguicolors
 " Make tmux colors great again
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
