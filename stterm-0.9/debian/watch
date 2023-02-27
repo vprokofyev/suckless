@@ -1,0 +1,2 @@
+version=4
+opts="mode=git, pgpmode=none" git://git.suckless.org/st refs/tags/([\d\.]+)
