@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCode NFM:style=Retina:pixelsize=14:antialias=true:autohint=false";
+/*static char *font = "FiraCode NFM:style=Retina:pixelsize=14:antialias=true:autohint=false";*/
+static char *font = "Consolas NF:style=Book:pixelsize=14:antialias=true:autohint=false";
 static int borderpx = 2;
 
 /*
