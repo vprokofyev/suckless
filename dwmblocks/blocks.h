@@ -4,8 +4,9 @@ static const Block blocks[] = {
 	/*{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},*/
 	/*{"", "/usr/local/bin/xkblayout-state print %s",					0,		1},*/
 	{"", "/home/vlad/.local/bin/sb-battery",					5,		3},
+	{"", "acpi -b | awk {'print $5'} | cut -c -5",					10,		1},
 	{"", "/home/vlad/.local/bin/sb-internet",					5,		4},
-	{"", "/home/vlad/.local/bin/sb-memory", 					10,		14},
+	/*{"", "/home/vlad/.local/bin/sb-memory", 					10,		14},*/
 	{"", "/home/vlad/.local/bin/sb-cpubar",					        5,		18},
 	{"", "/home/vlad/.local/bin/sb-clock",					        60,		1},
 };
