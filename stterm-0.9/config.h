@@ -5,9 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-/*static char *font = "FiraCode NFM:style=Retina:pixelsize=14:antialias=true:autohint=false";*/
-static char *font = "Consolas NF:style=Book:pixelsize=16:antialias=true:autohint=false";
-static int borderpx = 2;
+//static char *font = "FiraCode NFM:style=Retina:pixelsize=14:antialias=true:autohint=false";
+//static char *font = "Consolas NF:style=Book:pixelsize=16:antialias=true:autohint=false";
+//static char *font = "MesloLGM Nerd Font:style=Regular:pixelsize=15:antialias=true:autohint=false";
+static char *font = "Roboto Mono:style=Regular:pixelsize=17:antialias=true:autohint=false";
+static int borderpx = 1;
 
 /*
  * What program is execed by st depends of these precedence rules:
