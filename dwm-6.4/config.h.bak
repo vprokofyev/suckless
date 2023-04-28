@@ -23,7 +23,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+#define MAX_TAGLEN 16
+static char tags[][MAX_TAGLEN] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -100,6 +101,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_s,      show,           {0} },
 	{ MODKEY|ShiftMask,             XK_s,      showall,        {0} },
 	{ MODKEY,                       XK_h,      hide,           {0} },
+        { MODKEY,                       XK_n,      nametag,        {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -109,6 +111,9 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
+        TAGKEYS(                        XK_F10,                      9)
+        TAGKEYS(                        XK_F11,                      10)
+        TAGKEYS(                        XK_F12,                      11)
 	{ MODKEY|ShiftMask,             XK_q,      quitprompt,           {0} },
 };
 
