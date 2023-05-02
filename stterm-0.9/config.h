@@ -8,8 +8,8 @@
 //static char *font = "FiraCode NFM:style=Retina:pixelsize=14:antialias=true:autohint=false";
 //static char *font = "Consolas NF:style=Book:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "monospace:style=Regular:pixelsize=15:antialias=true:autohint=true";
-//static char *font = "MesloLGM Nerd Font:style=Regular:pixelsize=15:antialias=true:autohint=false";
-static char *font = "Roboto Mono:style=Regular:pixelsize=17:antialias=true:autohint=true";
+static char *font = "MesloLGM Nerd Font:style=Regular:pixelsize=17:antialias=true:autohint=false";
+//static char *font = "Roboto Mono:style=Regular:pixelsize=17:antialias=true:autohint=true";
 static int borderpx = 1;
 
 /*
