@@ -13,7 +13,7 @@
 //static char *font = "InconsolataGo Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true";
 //static char *font = "InconsolataGo Nerd Font Mono:style=Regular:pixelsize=22:antialias=true:autohint=true";
 //static char *font = "Inconsolata LGC Nerd Font Mono:style=Regular:pixelsize=18:antialias=true:autohint=true";
-static char *font = "RobotoMono Nerd Font Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
+static char *font = "RobotoMono Nerd Font Mono:style=Regular:pixelsize=14:antialias=true:autohint=true";
 //static char *font = "monospace:style=Regular:pixelsize=15:antialias=true:autohint=true";
 static int borderpx = 1;
 
@@ -201,20 +201,23 @@ static MouseShortcut mshortcuts[] = {
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
-	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
-	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
-	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
-	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
-	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
-	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
-	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
-	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
-	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ XK_ANY_MOD,               XK_Break,       sendbreak,      {.i =  0} },
+	{ ControlMask,              XK_Print,       toggleprinter,  {.i =  0} },
+	{ ShiftMask,                XK_Print,       printscreen,    {.i =  0} },
+	{ XK_ANY_MOD,               XK_Print,       printsel,       {.i =  0} },
+	{ TERMMOD,                  XK_Prior,       zoom,           {.f = +1} },
+	{ TERMMOD,                  XK_Next,        zoom,           {.f = -1} },
+	{ TERMMOD,                  XK_Home,        zoomreset,      {.f =  0} },
+        { ControlMask,              XK_C,           clipcopy,       {.i =  0} },
+        { ControlMask,              XK_V,           selpaste,       {.i =  0} },
+        //{ ControlMask,              XK_V,           clippaste,      {.i =  0} },
+	//{ TERMMOD,                  XK_C,           clipcopy,       {.i =  0} },
+	//{ TERMMOD,                  XK_V,           clippaste,      {.i =  0} },
+	//{ TERMMOD,                  XK_Y,           selpaste,       {.i =  0} },
+	{ ShiftMask,                XK_Insert,      selpaste,       {.i =  0} },
+	{ TERMMOD,                  XK_Num_Lock,    numlock,        {.i =  0} },
+	{ ShiftMask,                XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ ShiftMask,                XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*
