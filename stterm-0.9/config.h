@@ -13,7 +13,8 @@
 //static char *font = "InconsolataGo Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true";
 //static char *font = "InconsolataGo Nerd Font Mono:style=Regular:pixelsize=22:antialias=true:autohint=true";
 //static char *font = "Inconsolata LGC Nerd Font Mono:style=Regular:pixelsize=18:antialias=true:autohint=true";
-static char *font = "RobotoMono Nerd Font Mono:style=Regular:pixelsize=14:antialias=true:autohint=true";
+//static char *font = "RobotoMono Nerd Font Mono:style=Regular:pixelsize=14:antialias=true:autohint=true";
+static char *font = "AverageMono:style=Regular:pixelsize=14:antialias=true:autohint=true";
 //static char *font = "monospace:style=Regular:pixelsize=15:antialias=true:autohint=true";
 static int borderpx = 1;
 
