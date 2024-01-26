@@ -7,14 +7,16 @@
  */
 //static char *font = "FiraCode NFM:style=Retina:pixelsize=14:antialias=true:autohint=false";
 //static char *font = "Consolas NF:style=Book:pixelsize=15:antialias=true:autohint=true";
-//static char *font = "MesloLGM Nerd Font:style=Regular:pixelsize=16:antialias=true:autohint=true";
+//static char *font = "MesloLGM Nerd Font:style=Regular:pixelsize=14:antialias=true:autohint=true";
 //static char *font = "Roboto Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "Hurmit Nerd Font:style=Medium:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "InconsolataGo Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true";
 //static char *font = "InconsolataGo Nerd Font Mono:style=Regular:pixelsize=22:antialias=true:autohint=true";
-//static char *font = "Inconsolata LGC Nerd Font Mono:style=Regular:pixelsize=18:antialias=true:autohint=true";
+//static char *font = "Inconsolata LGC Nerd Font Mono:style=Regular:pixelsize=14:antialias=true:autohint=true";
 //static char *font = "RobotoMono Nerd Font Mono:style=Regular:pixelsize=14:antialias=true:autohint=true";
-static char *font = "AverageMono:style=Regular:pixelsize=15:antialias=true:autohint=false";
+//static char *font = "AverageMono:style=Regular:pixelsize=15:antialias=true:autohint=true";
+static char *font = "Courier 10 Pitch:style=Regular:pixelsize=15:antialias=true:autohint=true";
+//static char *font = "Foundation Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "monospace:style=Regular:pixelsize=15:antialias=true:autohint=true";
 static int borderpx = 1;
 
