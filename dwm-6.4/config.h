@@ -18,15 +18,25 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 //static const char dmenufont[]       = { "FiraCode Nerd Font:style=Regular:size=8" };
 static const char *fonts[]          = { "Roboto Mono:style=Regular:size=8:antialias=true:autohint=true","NotoColorEmoji:size=8:antialias=true:autohint=true" };
 static const char dmenufont[]       = { "Roboto Mono:style=Regular:size=8" };
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+//Default color scheme 
+//static const char col_gray1[]       = "#222222";
+//static const char col_gray2[]       = "#444444";
+//static const char col_gray3[]       = "#bbbbbb";
+//static const char col_gray4[]       = "#eeeeee";
+//static const char col_cyan[]        = "#005577";
+// Gruvbox color scheme
+static const char col_gray1[]       = "#282828";
+static const char col_gray2[]       = "#504945";
+static const char col_gray3[]       = "#bdae93";
+static const char col_gray4[]       = "#ebdbb2";
+static const char col_cyan[]        = "#cc241d";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+        // Default color scheme
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+        // Gruvbox color scheme
+        [SchemeSel]  = { col_gray4, col_gray2,  col_gray1  },
 	[SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
 };
 
