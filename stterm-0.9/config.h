@@ -20,7 +20,8 @@
 //static char *font = "Mononoki Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "Hack Nerd Font Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
-static char *font = "JetBrains Mono NL:style=Regular:pixelsize=15:antialias=true:autohint=true";
+//static char *font = "JetBrainsMonoNL Nerd Font Mono,JetBrainsMonoNL NFM:style=Regular:pixelsize=15:antialias=true:autohint=true";
+static char *font = "JetBrainsMonoNL Nerd Font,JetBrainsMonoNL NF:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono NL Thin:style=Thin:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "monospace:style=Regular:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 1;
