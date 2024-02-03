@@ -21,7 +21,10 @@
 //static char *font = "Hack Nerd Font Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "CommitMono:style=Regular:pixelsize=17:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
-static char *font = "JetBrains Mono Nerd Font:style=Regular:pixelsize=17:antialias=true:autohint=true";
+//static char *font = "JetBrains Mono for Powerline:style=Regular:pixelsize=17:antialias=true:autohint=true";
+//static char *font = "DM Mono:style=Regular:pixelsize=17:antialias=true:autohint=true";
+// optimal for 24''
+static char *font = "JetBrains Mono Nerd Font:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "monospace:style=Regular:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 1;
 
