@@ -26,6 +26,12 @@
 // optimal for 24''
 static char *font = "JetBrains Mono Nerd Font:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "monospace:style=Regular:pixelsize=16:antialias=true:autohint=true";
+
+static char *font2[] = {
+        "Symbols Nerd Font Mono:style=Regular:pixelsize=15:antialias=true:autohint=true", 
+/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+};
+
 static int borderpx = 1;
 
 /*
