@@ -13,7 +13,7 @@
 //static char *font = "InconsolataGo Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true";
 //static char *font = "InconsolataGo Nerd Font Mono:style=Regular:pixelsize=22:antialias=true:autohint=true";
 //static char *font = "Inconsolata LGC Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
-static char *font = "IosevkaTerm NFM:style=Regular::pixelsize=16:antialias=true:autohint=true";
+static char *font = "IosevkaTerm NFM:style=Regular::pixelsize=19:antialias=true:autohint=true";
 //static char *font = "RobotoMono Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "AverageMono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "Courier 10 Pitch:style=Regular:pixelsize=16:antialias=true:autohint=true";
@@ -31,7 +31,7 @@ static char *font = "IosevkaTerm NFM:style=Regular::pixelsize=16:antialias=true:
 //static char *font = "monospace:style=Regular:pixelsize=16:antialias=true:autohint=true";
 
 static char *font2[] = {
-        "Symbols Nerd Font:style=Regular:pixelsize=15:antialias=false:autohint=false",
+        "Symbols Nerd Font:style=Regular:pixelsize=19:antialias=false:autohint=false",
         //"Symbols Nerd Font Mono:style=Regular:pixelsize=15:antialias=true:autohint=true",
         //"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true",
 };
