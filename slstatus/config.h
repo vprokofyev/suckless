@@ -66,7 +66,7 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
         { battery_remaining,    " %s | ",           "BAT1" },
-        //{ run_command,        "%s | ",            "/usr/local/bin/mem" },
+        { run_command,          "%s | ",            "/usr/local/bin/mem" },
         //{ cpu_perc,           "CPU:  %s% | ",     NULL },
         { run_command,          "🌡 %s | ",         "/usr/local/bin/temp" },
         { wifi_perc,            "📶  %s | ",        "wlp3s0" },
