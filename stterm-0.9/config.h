@@ -12,15 +12,15 @@
 //static char *font = "Hurmit Nerd Font:style=Medium:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "InconsolataGo Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true";
 //static char *font = "InconsolataGo Nerd Font Mono:style=Regular:pixelsize=22:antialias=true:autohint=true";
-//static char *font = "Inconsolata LGC Nerd Font Mono:style=Regular:pixelsize=14:antialias=true:autohint=true";
+//static char *font = "Inconsolata LGC Nerd Font Propo:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "IosevkaTerm NFM:style=Regular::pixelsize=16:antialias=true:autohint=true";
 //static char *font = "RobotoMono Nerd Font Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
-static char *font = "Monaco:style=Regular:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Monaco Nerd Font:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "AverageMono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "Courier 10 Pitch:style=Regular:pixelsize=13:antialias=true:autohint=true";
 //static char *font = "Foundation Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "Mononoki Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
-//static char *font = "Hack Nerd Font Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
+//static char *font = "Hack Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "CommitMono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono:style=Thin:pixelsize=15:antialias=true:autohint=true";
@@ -32,10 +32,11 @@ static char *font = "Monaco:style=Regular:pixelsize=16:antialias=true:autohint=t
 //static char *font = "monospace:style=Regular:pixelsize=16:antialias=true:autohint=true";
 
 static char *font2[] = {
-        "MonacoLigaturized:style=Regular:pixelsize=19:antialias=false:autohint=false",
+        //"Monaco Nerd Font:style=Regular:pixelsize=16:antialias=true:autohint=true",
+        "Inconsolata LGC Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:autohint=true",
         //"Symbols Nerd Font:style=Regular:pixelsize=19:antialias=false:autohint=false",
-        //"Symbols Nerd Font Mono:style=Regular:pixelsize=15:antialias=true:autohint=true",
-        //"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true",
+        //"Symbols Nerd Font Mono:style=Regular:pixelsize=14:antialias=true:autohint=true",
+        //"Hack Nerd Font Mono:pixelsize=16:antialias=true:autohint=true",
 };
 
 static int borderpx = 1;
@@ -126,40 +127,81 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.9;
 
+/* Terminal colors (16 first used in escape sequence) */
+// Gruvbox
+//static const char *colorname[] = {
+	//[> 8 normal colors <]
+	//[0] = "#1d2021", [> hard contrast: #1d2021 / soft contrast: #32302f <]
+	//[1] = "#cc241d", [> red     <]
+	//[2] = "#98971a", [> green   <]
+	//[3] = "#d79921", [> yellow  <]
+	//[4] = "#458588", [> blue    <]
+	//[5] = "#b16286", [> magenta <]
+	//[6] = "#689d6a", [> cyan    <]
+	//[7] = "#a89984", [> white   <]
+
+	//[> 8 bright colors <]
+	//[8]  = "#928374", [> black   <]
+	//[9]  = "#fb4934", [> red     <]
+	//[10] = "#b8bb26", [> green   <]
+	//[11] = "#fabd2f", [> yellow  <]
+	//[12] = "#83a598", [> blue    <]
+	//[13] = "#d3869b", [> magenta <]
+	//[14] = "#8ec07c", [> cyan    <]
+	//[15] = "#ebdbb2", [> white   <]
+//};
+
+// ============================================================================
+// Cattpuccin
+// ============================================================================
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	[0] = "#1d2021", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	[1] = "#cc241d", /* red     */
-	[2] = "#98971a", /* green   */
-	[3] = "#d79921", /* yellow  */
-	[4] = "#458588", /* blue    */
-	[5] = "#b16286", /* magenta */
-	[6] = "#689d6a", /* cyan    */
-	[7] = "#a89984", /* white   */
+	"#45475A",
+	"#F38BA8",
+	"#A6E3A1",
+	"#F9E2AF",
+	"#89B4FA",
+	"#F5C2E7",
+	"#94E2D5",
+	"#BAC2DE",
 
 	/* 8 bright colors */
-	[8]  = "#928374", /* black   */
-	[9]  = "#fb4934", /* red     */
-	[10] = "#b8bb26", /* green   */
-	[11] = "#fabd2f", /* yellow  */
-	[12] = "#83a598", /* blue    */
-	[13] = "#d3869b", /* magenta */
-	[14] = "#8ec07c", /* cyan    */
-	[15] = "#ebdbb2", /* white   */
+	"#585B70",
+	"#F38BA8",
+	"#A6E3A1",
+	"#F9E2AF",
+	"#89B4FA",
+	"#F5C2E7",
+	"#94E2D5",
+	"#A6ADC8",
+
+[256] = "#CDD6F4", /* default foreground colour */
+[257] = "#1E1E2E", /* default background colour */
+[258] = "#F5E0DC", /*575268*/
+
 };
 
+
+/*
+ * foreground, background, cursor, reverse cursor
+ */
+unsigned int defaultfg = 256;
+unsigned int defaultbg = 257;
+unsigned int defaultcs = 258;
+static unsigned int defaultrcs = 258;
+// ============================================================================
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 15;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 15;
-static unsigned int defaultrcs = 257;
+//unsigned int defaultfg = 15;
+//unsigned int defaultbg = 0;
+//unsigned int defaultcs = 15;
+//static unsigned int defaultrcs = 257;
 
 /*
  * Default shape of cursor
@@ -203,7 +245,7 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button2, clippaste,       {.i = 0},      1 },
+	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
