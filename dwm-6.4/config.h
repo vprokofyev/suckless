@@ -18,12 +18,14 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 //static const char dmenufont[]       = { "FiraCode Nerd Font:style=Regular:size=8" };
 static const char *fonts[]          = { "Monaco Nerd Font:style=Regular:size=8:antialias=true:autohint=true","NotoColorEmoji:size=8:antialias=true:autohint=true" };
 static const char dmenufont[]       = { "Monaco Nerd Font:style=Regular:size=8" };
-//Default color scheme 
+
+//Default color scheme
 //static const char col_gray1[]       = "#222222";
 //static const char col_gray2[]       = "#444444";
 //static const char col_gray3[]       = "#bbbbbb";
 //static const char col_gray4[]       = "#eeeeee";
 //static const char col_cyan[]        = "#005577";
+
 // Gruvbox color scheme
 //static const char col_gray1[]       = "#282828";
 //static const char col_gray2[]       = "#504945";
@@ -45,37 +47,47 @@ static const char dmenufont[]       = { "Monaco Nerd Font:style=Regular:size=8" 
 //static const char pink[]        = "#c678dd";
 //static const char col_borderbar[]  = "#1e222a"; // inner border
 
-// Catppuccin color scheme
+// Catppuccin mocha
+//static const char rosewater[]        = "#7c7f93";
+//static const char flamingo[]    = "#cad3f5";
+//static const char pink[]       = "#abe9b3";
+//static const char mauve[]         = "#f28fad";
+//static const char red[]      = "#f8bd96";
+//static const char maroon[]      = "#fae3b0";
+
 static const char black[]       = "#1E1D2D";
+// default background dark blue
 static const char gray2[]       = "#282737"; // unfocused window border
 static const char gray3[]       = "#585767";
+// dark blue
 static const char gray4[]       = "#282737";
-// default
-static const char blue[]        = "#96CDFB";  // focused window border
-// change
+// bright light blue
 //static const char blue[]        = "#96CDFB";  // focused window border
-static const char green[]       = "#ABE9B3";
-static const char red[]         = "#F28FAD";
-static const char orange[]      = "#F8BD96";
-static const char yellow[]      = "#FAE3B0";
+// light grey
+static const char blue[]        = "#7c7f93";  // focused window border
+static const char grey[]        = "#7c7f93";
+static const char lavender[]    = "#cad3f5";
+static const char green[]       = "#abe9b3";
+static const char red[]         = "#f28fad";
+static const char orange[]      = "#f8bd96";
+static const char yellow[]      = "#fae3b0";
 static const char pink[]        = "#d5aeea";
 static const char col_borderbar[]  = "#1E1D2D"; // inner border
 static const char white[] = "#f8f8f2";
 
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
+    /*               fg         bg         border   */
     // gruvbox
-	//[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-        // Default color scheme
-	//[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-        // Gruvbox color scheme
-        //[SchemeSel]  = { col_gray4, col_gray2,  col_gray1  },
-	//[SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
-        // catppuccin
-        //[SchemeNorm]       = { gray3,   black,  gray2 },
-        //[SchemeSel]        = { gray4,   blue,   blue  },
-        [SchemeNorm]       = { gray3,   black,  gray2 },
-        [SchemeSel]        = { gray4,   blue,   blue  },
+    //[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+    // Default color scheme
+    //[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+    // Gruvbox color scheme
+    //[SchemeSel]  = { col_gray4, col_gray2,  col_gray1  },
+    //[SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
+
+    // catppuccin
+    [SchemeNorm]       = { gray3,   black,  gray2 },
+    [SchemeSel]        = { lavender,   black,   blue  },
 };
 
 /* tagging */
