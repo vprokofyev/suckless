@@ -27,11 +27,11 @@ static const char dmenufont[]       = { "Monaco Nerd Font:style=Regular:size=8" 
 //static const char col_cyan[]        = "#005577";
 
 // Gruvbox color scheme
-//static const char col_gray1[]       = "#282828";
-//static const char col_gray2[]       = "#504945";
-//static const char col_gray3[]       = "#bdae93";
-//static const char col_gray4[]       = "#ebdbb2";
-//static const char col_cyan[]        = "#cc241d";
+static const char col_gray1[]       = "#282828";
+static const char col_gray2[]       = "#504945";
+static const char col_gray3[]       = "#bdae93";
+static const char col_gray4[]       = "#ebdbb2";
+static const char col_cyan[]        = "#cc241d";
 
 // One dark color scheme
 //static const char black[]       = "#1e222a";
@@ -55,44 +55,44 @@ static const char dmenufont[]       = { "Monaco Nerd Font:style=Regular:size=8" 
 //static const char red[]      = "#f8bd96";
 //static const char maroon[]      = "#fae3b0";
 
-static const char black[]       = "#1E1D2D";
-// default background dark blue
-static const char gray2[]       = "#282737"; // unfocused window border
-static const char gray3[]       = "#585767";
-// dark blue
-static const char gray4[]       = "#282737";
-// bright light blue
-//static const char blue[]        = "#96CDFB";  // focused window border
-// light grey
-static const char blue[]        = "#7c7f93";  // focused window border
-static const char grey[]        = "#7c7f93";
-static const char lavender[]    = "#cad3f5";
-static const char green[]       = "#abe9b3";
-static const char red[]         = "#f28fad";
-static const char orange[]      = "#f8bd96";
-static const char yellow[]      = "#fae3b0";
-static const char pink[]        = "#d5aeea";
-static const char col_borderbar[]  = "#1E1D2D"; // inner border
-static const char white[] = "#f8f8f2";
+// static const char black[]       = "#1E1D2D";
+// // default background dark blue
+// static const char gray2[]       = "#282737"; // unfocused window border
+// static const char gray3[]       = "#585767";
+// // dark blue
+// static const char gray4[]       = "#282737";
+// // bright light blue
+// //static const char blue[]        = "#96CDFB";  // focused window border
+// // light grey
+// static const char blue[]        = "#7c7f93";  // focused window border
+// static const char grey[]        = "#7c7f93";
+// static const char lavender[]    = "#cad3f5";
+// static const char green[]       = "#abe9b3";
+// static const char red[]         = "#f28fad";
+// static const char orange[]      = "#f8bd96";
+// static const char yellow[]      = "#fae3b0";
+// static const char pink[]        = "#d5aeea";
+// static const char col_borderbar[]  = "#1E1D2D"; // inner border
+// static const char white[] = "#f8f8f2";
 
 static const char *colors[][3]      = {
     /*               fg         bg         border   */
     // gruvbox
-    //[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+    [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
     // Default color scheme
     //[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
     // Gruvbox color scheme
-    //[SchemeSel]  = { col_gray4, col_gray2,  col_gray1  },
-    //[SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
+    [SchemeSel]  = { col_gray4, col_gray2,  col_gray1  },
+    [SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
 
     // catppuccin
-    [SchemeNorm]       = { gray3,   black,  gray2 },
-    [SchemeSel]        = { lavender,   black,   blue  },
+    // [SchemeNorm]       = { gray3,   black,  gray2 },
+    // [SchemeSel]        = { lavender,   black,   blue  },
 };
 
 /* tagging */
 #define MAX_TAGLEN 16
-static char tags[][MAX_TAGLEN] = { "1:web", "2:web", "3:ssh", "4:ops", "5:local", "6:clo", "7:fvds", "8:tg", "9:work", "10:trash", "11:float", "12:mm" };
+static char tags[][MAX_TAGLEN] = { "1:web", "2:web", "3:ops", "4:lo", "5:chats", "6:float", "7:work", "8:trash" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -131,9 +131,9 @@ static const Layout layouts[] = {
 
 /* commands */
 // Gruvbox dmenu
-//static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 // Catppuccin dmenu
-static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", gray4, "-nf", gray3, "-sb", blue, "-sf", gray4, NULL };
+// static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", gray4, "-nf", gray3, "-sb", blue, "-sf", gray4, NULL };
 static const char *termcmd[]  = { "/usr/local/bin/alacritty", NULL };
 static const char *brightness_up[] = { "/usr/local/bin/br", "+25", NULL };
 static const char *brightness_down[] = { "/usr/local/bin/br", "-25", NULL };
