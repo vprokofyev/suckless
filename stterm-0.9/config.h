@@ -18,7 +18,7 @@
 //static char *font = "IosevkaTerm NFM:style=Regular::pixelsize=16:antialias=true:autohint=true";
 //static char *font = "RobotoMono Nerd Font Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "Monaco Nerd Font:style=Regular:pixelsize=16:antialias=true:autohint=true";
-static char *font = "Monaco Nerd Font:style=Regular:pixelsize=16:antialias=true";
+// static char *font = "Monaco Nerd Font:style=Regular:pixelsize=16:antialias=true";
 //static char *font = "Monaco:style=Normal:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "AverageMono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "Courier 10 Pitch:style=Regular:pixelsize=13:antialias=true:autohint=true";
@@ -26,7 +26,7 @@ static char *font = "Monaco Nerd Font:style=Regular:pixelsize=16:antialias=true"
 //static char *font = "Mononoki Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "Hack Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "CommitMono:style=Regular:pixelsize=16:antialias=true:autohint=true";
-//static char *font = "JetBrains Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
+static char *font = "JetBrains Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono:style=Thin:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono:style=Light:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono for Powerline:style=Regular:pixelsize=15:antialias=true:autohint=true";

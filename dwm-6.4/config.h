@@ -92,7 +92,7 @@ static const char *colors[][3]      = {
 
 /* tagging */
 #define MAX_TAGLEN 16
-static char tags[][MAX_TAGLEN] = { "1:web", "2:web", "3:ops", "4:lo", "5:chats", "6:float", "7:work", "8:trash" };
+static char tags[][MAX_TAGLEN] = { "1:web", "2:web", "3:ops", "4:shell", "5:local", "6:otm", "7:chats", "8:work", "9:obs" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -134,7 +134,8 @@ static const Layout layouts[] = {
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 // Catppuccin dmenu
 // static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", gray4, "-nf", gray3, "-sb", blue, "-sf", gray4, NULL };
-static const char *termcmd[]  = { "/usr/local/bin/alacritty", NULL };
+//static const char *termcmd[]  = { "/usr/local/bin/kitty", NULL };
+static const char *termcmd[]  = { "/usr/local/bin/st", NULL };
 static const char *brightness_up[] = { "/usr/local/bin/br", "+25", NULL };
 static const char *brightness_down[] = { "/usr/local/bin/br", "-25", NULL };
 
