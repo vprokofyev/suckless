@@ -27,8 +27,10 @@
 //static char *font = "Hack Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "CommitMono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 // Good small font
+// Agave
+static char *font = "Agave Nerd Font Mono:style=Regular:pixelsize=19:antialias=true:autohint=true";
 // static char *font = "JetBrains Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
-static char *font = "JetBrainsMono Nerd Font:style=Regular:pixelsize=17:antialias=true:autohint=true";
+// static char *font = "JetBrainsMono Nerd Font:style=Regular:pixelsize=17:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono:style=Thin:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono:style=Light:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono for Powerline:style=Regular:pixelsize=15:antialias=true:autohint=true";
