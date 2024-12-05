@@ -27,7 +27,7 @@
 //static char *font = "Hack Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 //static char *font = "CommitMono:style=Regular:pixelsize=16:antialias=true:autohint=true";
 // static char *font = "JetBrains Mono:style=Regular:pixelsize=15:antialias=true:autohint=true";
-static char *font = "Agave Nerd Font Mono:style=Regular:pixelsize=19:antialias=true:autohint=true";
+static char *font = "Agave Nerd Font Mono:style=Regular:pixelsize=21:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono:style=Thin:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono:style=Light:pixelsize=15:antialias=true:autohint=true";
 //static char *font = "JetBrains Mono for Powerline:style=Regular:pixelsize=15:antialias=true:autohint=true";
@@ -134,7 +134,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.9;
+float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 // Gruvbox
