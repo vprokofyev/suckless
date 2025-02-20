@@ -92,7 +92,7 @@ static const char *colors[][3]      = {
 
 /* tagging */
 #define MAX_TAGLEN 16
-static char tags[][MAX_TAGLEN] = { "1:web", "2:web", "3:ops", "4:ops", "5:otm", "6:otm", "7:evg", "8:evg", "9:wiki", "10:chats" };
+static char tags[][MAX_TAGLEN] = { "1:web", "2:web", "3:ops", "4:ops", "5:otm", "6:otm", "7:evg", "8:evg", "9:wiki", "10:yandex", "11:chats", "12:misc" };
 
 static const Rule rules[] = {
 	/* xprop(1):
