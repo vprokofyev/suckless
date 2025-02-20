@@ -67,7 +67,8 @@ static const struct arg args[] = {
 	/* function format          argument */
         { run_command,   " %s | ",            "/usr/local/bin/mem" },
         { cpu_perc,   "CPU:  %s% | ",         NULL },
-        { run_command,   "t: %s | ",          "/usr/local/bin/temp" },
+        // { run_command,   "t: %s | ",          "/usr/local/bin/temp" },
         { keymap,   "%s | ",                  NULL },
-	{ datetime, "%s",                    "%T" },
+		{ datetime, "MSK: %s | ",                    "%T" },
+		{ run_command, "UTC: %s", "TZ=UTC date +'%T'" },
 };
